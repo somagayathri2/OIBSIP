@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="starbucks.css">
+</head>
+<style>
+    .mySlides{display:none;}
+</style>
+
+<body>
+    <div class="container">
+        <div class="wave">
+            <img src="bg.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Types</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+           <center> <img width="100%" height="100px" src="https://media.designrush.com/inspiration_images/137088/conversions/_1525811908_162_Starbucks-Logo-Full-mobile.jpg" alt=""></center>
+        </nav>
+
+        <div class="main-content">
+
+            <div class="image-pista">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div><img src="https://images.unsplash.com/photo-1589476993333-f55b84301219?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RhcmJ1Y2tzfGVufDB8fDB8fHww" width="450" height="400" class="mySlides">
+        <img src="https://b.zmtcdn.com/data/reviews_photos/ffe/e3e473f5ae19ac09ec0ad8f40b47dffe_1566056978.jpg" width="450" height="400" class="mySlides">
+        <img src="https://wearenotmartha.com/wp-content/uploads/cinnamon-caramel-cream-cold-brew-featured.jpg" width="450" height="400" class="mySlides"></div>   
+                    </div> 
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Starbucks</h1>
+                <p>Where every cup is a story, and every story is a sip of happiness.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Quality Coffee Beans</h3>
+                    <p>Quality,Consistency,Craftsmanship.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img5.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Customization</h3>
+                    <p>Coffee, Convenience, Experience.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img6.png" alt="">
+                </div>
+                <div class="inner-box">
+                    <h3>Seasonal Offerings</h3>
+                    <p>Variety, Freshness, Innovation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+      <div style="background-color: #93C572"><center><h1>Latest Offerings</h1></center></div>
+        <script>
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+              <div style="background-color:  #93C572;"
+              <div class="row">
+                <div class="column">
+                    <div class="img-with-text">
+                  <img src="https://www.tasteofhome.com/wp-content/uploads/2023/06/Dragon-Drink-Refresher-starbucks.jpg?fit=700%2C700?fit=700,700" alt="Snow" style="width:100%"><br>
+                  <p> Dragon Drink Refresher
+                    Dragon fruit might be one of the weirdest fruits you’ll ever eat, 
+                    but it sure does make one heck of a Refresher. Mixed with sweet 
+                    mango and creamy coconut milk, this drink is great for when you’re 
+                    craving something refreshing that isn’t lemonade or iced tea.<br><br>
+                   <h1> <b>Price:$300.00</b></h1>
+                    </p>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="img-with-text">
+                  <img src="https://www.tasteofhome.com/wp-content/uploads/2023/06/Pink-Drink-Refresher-starbucks.jpg?fit=700%2C700?fit=700,700" alt="Forest" style="width:100%"><br>
+                  <p>Pink Drink Refresher
+                    Speaking of refreshments, Starbucks Refreshers are a drink 
+                    we didn’t know we needed until the moment we tasted one. 
+                    The Pink Drink Refresher uses strawberry acai as 
+                    a base and then adds passion fruit and coconut milk to sweeten the deal.</p><br>
+                    <h1> <b>Price:$500.00</b></h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img-with-text">
+                  <img src="https://www.tasteofhome.com/wp-content/uploads/2023/06/Iced-Caffe-Latte-starbucks.jpg?fit=700%2C700?fit=700,700" alt="Mountains" style="width:100%"><br>
+                  <p>Iced Caffe Latte
+                    This one is for all the latte-lovers who don’t need a 
+                    bunch of syrups overpowering the coffee they crave. 
+                    The original drink just uses regular milk, but you can always order it with your 
+                    favorite non-dairy option. The dark espresso balances the milk perfectly.</p><br><br>
+                    <h1> <b>Price:$100.00</b></h1>
+                  </div>
+                </div>
+              </div>
+              
+    </div>
+    <center>
+    <div style="background-color: #93C572;">
+        <h2>You can give your feedback</h2>
+        <form id="review-form" style="line-height: 90px;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea><br>
+        
+            <button type="submit">Submit Review</button>
+        </form>
+    </center>
+   
+    </div>
+ </body>
+</html>
