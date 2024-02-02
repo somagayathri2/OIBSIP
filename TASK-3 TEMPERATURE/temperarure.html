@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="converter">
+        <h1>Temperature Converter</h1>
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" oninput="convertTemperature()">
+        
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" placeholder="Temperature in Celsius" disabled>
+    </div>
+
+    <script>
+    function convertTemperature() 
+    {
+    // Get the Fahrenheit input value
+    var fahrenheitInput = document.getElementById('fahrenheit');
+    var fahrenheitValue = parseFloat(fahrenheitInput.value);
+
+    // Check if the input is a valid number
+    if (!isNaN(fahrenheitValue)) {
+        // Convert Fahrenheit to Celsius
+        var celsiusValue = (fahrenheitValue - 32) * (5/9);
+
+        // Display the result in the Celsius input
+        var celsiusInput = document.getElementById('celsius');
+        celsiusInput.value = celsiusValue.toFixed(2);
+    } else {
+        // If the input is not a valid number, clear the Celsius input
+        var celsiusInput = document.getElementById('celsius');
+        celsiusInput.value = '';
+    }
+}
+ </script>
+</body>
+</html>
